@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Evo X vic manifest for marlin/sailfish -->
+
+    <!-- External remotes -->
+    <remote name="muppets" fetch="https://github.com/TheMuppets" revision="lineage-22.1" />
+    <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-22.1" />
+    <remote name="marlin" fetch="https://github.com/techgenius1" revision="vic" />
+
+    <!-- Device repos -->
+    <project path="device/google/marlin" name="android_device_google_marlin" remote="marlin" />
+
+    <!-- Hardware repos -->
+    <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="lineage" />
+
+    <!-- Kernel repos -->
+    <project path="kernel/google/marlin" name="android_kernel_google_marlin" remote="lineage" />
+
+    <!-- Vendor repos -->
+    <project path="vendor/google/marlin" name="proprietary_vendor_google_marlin" remote="muppets" />
+
+</manifest>
